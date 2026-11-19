@@ -6,3 +6,7 @@ set.addEventListener("click", () => {
 
 })
 
+window.onscroll = () => {
+    menu.classList.remove("menu-active");
+}
+
