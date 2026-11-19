@@ -183,3 +183,34 @@ body{
     }
     
 }
+
+.koleksi{
+    padding-bottom: 150px;
+}
+
+.koleksi-box h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.koleksi-box ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.koleksi-box ul li{
+    list-style-type: none;
+    padding: 10px ;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.kolesi-box ul li.active{
+    background-color: rebeccapurple;
+    color: white;
+}
+
