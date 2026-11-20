@@ -214,3 +214,22 @@ body{
     color: white;
 }
 
+.koleksi-box .koleksi-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.koleksi-box .koleksi-list img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+}
+
+.koleksi-box .koleksi-list img:hover{
+    background-color: rebeccapurple;
+    transform: scale(1.05);
+}
