@@ -233,3 +233,57 @@ body{
     background-color: rebeccapurple;
     transform: scale(1.05);
 }
+
+/* Footer */
+.footer {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer p span {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.footer .box:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer .box i {
+    cursor: pointer;
+}
+
+.footer .box i:hover {
+    color: rebeccapurple;
+}
+
+/* Footer position */
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.koleksi {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        gap: 20px;
+    }
+}
+
+.footer p {
+    font-size: 12px;
+}

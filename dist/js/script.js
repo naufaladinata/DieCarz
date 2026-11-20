@@ -10,26 +10,34 @@ window.onscroll = () => {
     menu.classList.remove("menu-active");
 }
 
-const btnfilter = document.querySelectorAll("koleksi-box ul li");
-const imgItem = document.querySelectorAll(".koleksi-list .img");
+const btnfilter = document.querySelectorAll(".koleksi-box ul li");
+const imgItem = document.querySelectorAll(".koleksi-list img");
 
 btnfilter.forEach(data => {
-    
+
     data.onclick = () => {
-        btnfilter.forEach(data => {
-            data.className = "";
-        })
-        data.className = "active";
-        
-        //Filter
-        const btntext = data.textContent;
-        imgItem.forEach(img => {
-          img.style.display = "none";
-          if (img.getAttribute("data-filter") == btntext.toLowerCase() || btnText == "Semua Koleksi") {
-            img.style.display = "block";
-          }
+
+        btnfilter.forEach(btn => {
+            btn.className = "";
         });
 
-    }
-   
-    })
+        data.className = "active";
+
+        // Filter
+        const btntext = data.textContent.trim().toLowerCase();
+
+        imgItem.forEach(img => {
+
+            const imgfilter = img.getAttribute("data-filter").toLowerCase();
+
+            img.style.display = "none";
+
+            if (imgfilter === btntext || btntext === "semua koleksi") {
+                img.style.display = "block";
+            }
+
+        });
+
+    };
+
+});
